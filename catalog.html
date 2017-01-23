@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Барбершоп</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <div class="logo">
+          <img src="http://placehold.it/111x24" alt="barbershop logo">
+        </div>
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a href="#">Информация</a>
+            </li>
+            <li>
+              <a href="#">Новости</a>
+            </li>
+            <li>
+              <a href="#">Прайс-лист</a>
+            </li>
+            <li>
+              <a href="#">магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+            <li>
+              <a href="#">Информация</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="user-block">
+          <a href="#" class="login">Вход</a>
+        </div>
+      </div>
+    </header>
+    <section class="shop-navigation">
+      <h2>Средства для ухода</h2>
+      <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Магазин</a></li>
+        <li><a href="#">Средства для ухода</a></li>
+      </ul>
+    </section>
+    <section class="filter">
+      <form action="/echo" method="get">
+        <fieldset>
+          <legend>Производители:</legend>
+          <label><input type="checkbox" name="manufacturer" checked>Baxter of California</label>
+          <label><input type="checkbox" name="manufacturer">Mr Natty</label>
+          <label><input type="checkbox" name="manufacturer" checked>Suavecito</label>
+          <label><input type="checkbox" name="manufacturer">Malin+Goetz</label>
+          <label><input type="checkbox" name="manufacturer">Murray’s</label>
+          <label><input type="checkbox" name="manufacturer" checked>American Crew</label>
+        </fieldset>
+        <fieldset>
+          <legend>Группы товаров:</legend>
+            <input id="radio-1" type="radio" name="item-group" value="shaving"><label for="radio-1">Бритвенные принадлежности</label>
+            <input id="radio-2" type="radio" name="item-group" value="care" checked><label for="radio-2">Средства для ухода</label>
+            <input id="radio-3" type="radio" name="item-group" value="accessories"><label for="radio-3">Аксессуары</label>
+        </fieldset>
+        <input type="submit" value="Показать">
+      </form>
+    </section>
+    <section class="shop-items">
+      <article class="item">
+        <img src="http://placehold.it/220x165" alt="item-image">
+        <p>Набор для путешествий<br>
+          «Baxter of California»</p>
+        <div class="price">2900 РУБ.</div>
+        <button>Купить</button>
+      </article>
+      <article class="item">
+        <img src="http://placehold.it/220x165" alt="item-image">
+        <p>Увлажняющий кондиционер<br>
+            «Baxter of California»</p>
+        <div class="price">750 РУБ.</div>
+        <button>Купить</button>
+      </article>
+      <article class="item">
+        <img src="http://placehold.it/220x165" alt="item-image">
+        <p>Гель для волос<br>
+            «SUAVECITO»</p>
+        <div class="price">290 РУБ.</div>
+        <button>Купить</button>
+      </article>
+      <article class="item">
+        <img src="http://placehold.it/220x165" alt="item-image">
+        <p>Глина для укладки волос<br>
+            «American crew»</p>
+        <div class="price">500 РУБ.</div>
+        <button>Купить</button>
+      </article>
+      <article class="item">
+        <img src="http://placehold.it/220x165" alt="item-image">
+        <p>Гель для волос<br>
+          «AMERICAN CREW»</p>
+        <div class="price">300 РУБ.</div>
+        <button>Купить</button>
+      </article>
+      <article class="item">
+        <img src="http://placehold.it/220x165" alt="item-image">
+        <p>Набор для бритья<br>
+          «Baxter of California»</p>
+        <div class="price">3900 РУБ.</div>
+        <button>Купить</button>
+      </article>
+      <div class="pages">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <section class="address">
+        <p>
+          Барбершоп «Бородинский»<br>
+          Адрес: г. Санкт-Петербкрг, ул. Б. Конюшенная, д. 19/8<br>
+          Как нас найти?<br>
+          Телефон: +7 (495) 666-02-66<br>
+        </p>
+      </section>
+      <section class="social-media">
+        <p>Давайте дружить!</p>
+        <a href="#">VK</a>
+        <a href="#">FB</a>
+        <a href="#">Instagram</a>
+      </section>
+      <section class="authors">
+        <p>Разработано:</p>
+        <a href="#">htmlacademy.ru</a>
+      </section>
+    </footer>
+  </body>
+</html>
