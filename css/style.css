@@ -15,9 +15,9 @@ body {
   font-weight: 700;
   line-height: 24px;
   text-transform: uppercase;
-  margin: 0 10px;
   padding: 0;
   border: 0;
+  margin: 0 10px;
   vertical-align: baseline;
 }
 
@@ -72,6 +72,11 @@ h2 {
 
 /*HEADER*/
 
+.main-header {
+  margin-bottom: 50px;
+  min-height: 72px;
+}
+
 .main-header .container {
   padding: 0 20px;
 }
@@ -94,6 +99,7 @@ h2 {
   display: inline-block;
   float: right;
   width: 150px;
+  text-align: right;
 }
 
 /*CATALOG*/
@@ -124,19 +130,69 @@ h2 {
   margin-right: 20px;
 }
 
+.item h2 {
+  font-size: 14px;
+  line-break: 18px;
+}
+
+.pages {
+  margin-top: 45px;
+  margin-bottom: 50px;
+}
+
+.page {
+  width: 43px;
+  height: 43px;
+  background-color: #000;
+  margin-right: 3px;
+  display: inline-block;
+}
+
+.page a {
+  color: #fff;
+}
+
 /*CATALOG ITEM*/
 
-.item-gallery {
+.item-details {
+  margin-bottom: 30px;
+}
+
+.shop-navigation {
+  margin-bottom: 50px;
+}
+
+.shop-navigation h1 {
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
+}
+
+.item-left {
   width: 460px;
   float: left;
 }
 
-.item-details {
+.item-left img {
+  margin-bottom: 13px;
+  margin-right: 16px;
+}
+
+.item-left img:last-child {
+  margin-right: 0;
+}
+
+.item-right {
   width: 390px;
   float: right;
+  padding-top: 10px;
 }
 
 /*FOOTER*/
+.main-footer {
+  min-height: 190px;
+}
+
 .address {
   float: left;
 }
