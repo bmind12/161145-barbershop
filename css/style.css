@@ -1,3 +1,13 @@
+/*CONFIGURATION*/
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
 body {
   color: #000;
   font-family: "PT Sans";
@@ -5,22 +15,136 @@ body {
   font-weight: 700;
   line-height: 24px;
   text-transform: uppercase;
+  margin: 0 10px;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
 }
+
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+header, footer, nav, section {
+  display: block;
+}
+
+/*TITLES*/
 
 h1 {
   color: #000;
-  font-family: "PT Sans";
   font-size: 30px;
-  font-weight: 700;
   line-height: 42px;
   text-transform: uppercase;
 }
 
 h2 {
   color: #000;
-  font-family: "PT Sans";
   font-size: 24px;
-  font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+/*GRID*/
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*HEADER*/
+
+.main-header .container {
+  padding: 0 20px;
+}
+
+.logo {
+  float: left;
+  width: 130px;
+}
+
+.main-navigation {
+  float: left;
+  width: 620px;
+}
+
+.main-navigation ul li {
+  display: inline-block;
+}
+
+.user-block {
+  display: inline-block;
+  float: right;
+  width: 150px;
+}
+
+/*CATALOG*/
+
+.shop-navigation ul li {
+  display: inline-block;
+}
+
+.filter {
+  float: left;
+  width: 220px;
+}
+
+.shop-items {
+  float: right;
+  width: 700px;
+}
+
+.item {
+  width: 220px;
+  margin-bottom: 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.item:nth-child(3n+2) {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/*CATALOG ITEM*/
+
+.item-gallery {
+  width: 460px;
+  float: left;
+}
+
+.item-details {
+  width: 390px;
+  float: right;
+}
+
+/*FOOTER*/
+.address {
+  float: left;
+}
+
+.social-media {
+  margin: 0 auto;
+}
+
+.authors {
+  float: right;
 }
